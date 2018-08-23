@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="refresh" content="100">
+<meta name="viewport" content="width:device-width;intial-scale=1.0;">
+<link rel="index name" href="index.css">
+<style>
+
+.hd1{width:50%;
+float:left;
+}
+div:after{ 
+    content: "";
+    display: table;
+    clear: both;
+}
+.hd2{width:50%;
+float:right;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:while;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: MediumSeaGreen;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:  #f1f1f1;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color:MediumSeaGreen;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.hd3 {
+    position:relative;
+    font-size: 17px;
+z-index:-1;
+    background-color: #5f5f5f;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    height:35px;
+    color:MediumSeaGreen;
+}
+body
+{
+margin-left:0px;
+margin-right:0px;
+}
+</style>
+</head>
+<body>
+<div class="main">
+    <div class="hd1">
+       <img src="logo.png" style="height:auto;margin-left:170px;">
+    </div>
+    <div class="hd2">
+     <b><ul>
+     <li><a href="#home">HOME</a></li>
+     <li class="dropdown">  
+       <a href="javascript:void(0)" class="dropbtn">COMPANY</a>
+         <div class="dropdown-content">
+             <a href="#">About US</a>
+             <a href="#">Board Of Directors</a>
+             <a href="#">Leadership Team</a>
+        </div>
+     </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">SOLUTIONS</a>
+        <div class="dropdown-content">
+           <a href="#">INFINITE</a>
+           <a href="#">SFMS</a>
+           <a href="#">Bank On Cloud</a>
+       </div>
+   </li>
+   <li><a href="#home">CONTACT</a></li>
+   <li><a href="#home">SUPPORT</a></li></b>
+   </ul></div>
+</div>
+<div class="hd3">
+<h3><marquee>IFTAS introduces new products on its Cloud</marquee></h3>
+</div>
+</body>
+</html>
